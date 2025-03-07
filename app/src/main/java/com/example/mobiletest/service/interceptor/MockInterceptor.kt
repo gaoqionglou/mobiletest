@@ -25,7 +25,7 @@ class MockInterceptor : Interceptor {
             .protocol(Protocol.HTTP_1_1)
             .body(mockData.toResponseBody("application/json".toMediaTypeOrNull()))
             .addHeader("Content-Type", "application/json")
-        Log.d("xxx", "mock data----------")
+        Log.d("xxx", "mock data----------$mockData")
         return responseBuilder.build()
     }
 
